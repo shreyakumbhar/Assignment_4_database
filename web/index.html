@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<body>
+<form method="post" action="process.jsp">
+    <!--Name-->
+			<label for="name">FullName</label>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Employee Name" data-rule="minlen:4" data-msg="Enter your Full name">
+              <div class="validate"></div>
+
+			<!--Email-->
+			<label for="email"><pre>
+			</pre>Email Address*</label>
+              <input type="text" class="form-control" name="email" id="email" placeholder="Employee Email" data-rule="email" data-msg="Enter a valid email">
+              <div class="validate"></div>
+              
+              <label for="addr"><pre>
+			</pre> Address*</label>
+              <input type="text" class="form-control" name="addr" id="addr" placeholder="Employee Email" data-rule="addr" data-msg="Enter a valid email">
+              <div class="validate"></div>
+              
+              
+              <label for="post">Post</label>
+              <input type="text" name="post" class="form-control" id="post" placeholder="Employeebranch" data-rule="minlen:4" data-msg="Enter your branch name">
+              <div class="validate"></div>
+			  
+			
+			  
+			<!--Phone no-->
+			<label for="phone"><pre>
+			</pre>Phone number*</label>
+              <input type="tel" name="phone" class="form-control" id="phone" placeholder="Employee Phone Number" data-rule="minlen:4" data-msg="Enter your 10 digit phone number">
+
+			<label for="sal"><pre>
+			</pre>Salary*</label>
+              <input type="number" name="sal" class="form-control" id="sal" placeholder="Employee Salary" data-rule="minlen:4" data-msg="Enter your 10 digit phone number">
+
+
+    
+    
+<!---FULL Name:<br>
+<input type="text" name="first_name">
+<br>
+Last name:<br>
+<input type="text" name="last_name">
+<br>
+City name:<br>
+<input type="text" name="city_name">
+<br>
+Email Id:<br>
+<input type="email" name="email">
+<br><br>--->
+<center>
+<button type="submit" class="registerbtn">Insert</button>
+</center>
+</form>
+    <center>
+     <a href='delete.jsp'>
+  <button type="submit" class="registerbtn" >Delete</button>
+  </a>
+ 
+
+<a href='index.jsp'>
+<button type="submit" class="registerbtn">Update</button>
+</a>
+    </center>
+
+
+
+
+    
+    
+    
+
+
+
+ <!--<a href="index.jsp"><h4>update</h4><br></a>
+ <a href="delete.jsp"><h4>delete</h4><br></a>-->
+
+    
+
+
+
+     <style>
+            body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+            .container {
+    width: 100%;
+    height: 100%;
+  padding: 10px;
+  background-color:pink;
+}
+  
+            form {
+                margin: 0 auto;
+                width: 600px;
+            }
+            
+ input[type=text], input[type=text],input[type=text],input[type=text],input[type=tel],input[type=number]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=text]:focus ,input[type=text]:focus,input[type=text]:focus, input[type=tel]:focus,input[type=number]:focus{
+  background-color: pink;
+  outline: none;
+}
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  display:inline-block;
+  align-items:center;
+  position:relative;
+  opacity: 0.9;
+}
+
+
+
+
+
+
+        </style>
+
+ 
+
+         
+</body>
+</html>
